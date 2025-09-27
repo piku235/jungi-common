@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2025-09-27
+
+### Changed
+- Simplified `Result` and adjusted to suit more PHP. The main inspirations: c++23 `std::expected` and Rust's `Result`
+- Adjusted to PHP **8.4**
+- Updated PHPUnit to **v12**
+
+### Removed
+- Class `Option`
+
 ## [1.2.0] - 2022-07-09
 
 ### Added
@@ -26,7 +36,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Function `iterable_search()` that returns the first key where the given value is equal.
 
-[unreleased]: https://github.com/jungi-php/common/compare/v1.2.0...HEAD
+[unreleased]: https://github.com/jungi-php/common/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/jungi-php/common/compare/v1.2.0...v2.0.0
 [1.2.0]: https://github.com/jungi-php/common/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/jungi-php/common/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/jungi-php/common/compare/v1.0.0...v1.1.0
