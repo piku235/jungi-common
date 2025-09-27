@@ -13,7 +13,7 @@ function equals(mixed $a, mixed $b): bool
     if ($a instanceof Equatable) {
         try {
             return $a->equals($b);
-        } catch (\TypeError $e) {
+        } catch (\TypeError) {
             return false;
         }
     }
