@@ -1,7 +1,7 @@
 {
     "name": "jungi/common",
     "description": "A minimal library that defines primitive building blocks of PHP code.",
-    "keywords": ["equatable"],
+    "keywords": ["equatable", "result", "expected"],
     "type": "library",
     "license": "MIT",
     "authors": [
