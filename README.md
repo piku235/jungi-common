@@ -99,8 +99,8 @@ class ClassController
         }
         
         return match ($r->error) {
-            ClassEnrollmentError::StudentAlreadyEnrolled => $this->noContent(), // returns 204
-            default => $this->conflict($error), // returns 409 with the error
+            ClassEnrollmentError::StudentAlreadyEnrolled => $this->noContent(),
+            default => $this->conflict($error),
         };
     }
 }
@@ -124,7 +124,8 @@ class ContactInformation implements Equatable
 
     public function equals(self $other): bool
     {
-        return $this->phone->equals($other->phone) && equals($this->mobile, $other->mobile);
+        return $this->phone->equals($other->phone)
+            && equals($this->mobile, $other->mobile);
     }
 }
 
